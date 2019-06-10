@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sample Test Suite">
+
+	<parameter name="MercuryToursURL" value="http://newtours.demoaut.com/" />
+
+	<test name="Test Set">
+	
+		<classes>
+			<class
+				name="testframework.mercurytours.testsuiteone.MercuryToursTestSuite" />
+
+			<class
+				name="testframework.mercurytours.testsuite2.MercuryToursTestSuite2" />
+		</classes>
+	</test>
+
+</suite>
