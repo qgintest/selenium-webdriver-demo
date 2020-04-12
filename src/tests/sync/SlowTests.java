@@ -26,7 +26,12 @@ public class SlowTests {
 		
 		
 		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.DAYS);
+		//driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.HOURS);
+		
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.DAYS);
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.HOURS);
 
 		//selenium waits x seconds (check every half a second)
 		

@@ -4,14 +4,22 @@
 
 	<parameter name="MercuryToursURL" value="http://newtours.demoaut.com/" />
 
-	<test name="Test Set">
+<!-- 	<test name="Test Set"> -->
+	
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="testframework.mercurytours.testsuiteone.MercuryToursTestSuite" /> -->
+
+<!-- 			<class -->
+<!-- 				name="testframework.mercurytours.testsuite2.MercuryToursTestSuite2" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+	<test name="Test Design Patterns">
 	
 		<classes>
 			<class
-				name="testframework.mercurytours.testsuiteone.MercuryToursTestSuite" />
-
-			<class
-				name="testframework.mercurytours.testsuite2.MercuryToursTestSuite2" />
+				name="solid.testdesignpattern.pageobjectpattern.MercuryToursTestSuite" />
 		</classes>
 	</test>
 
