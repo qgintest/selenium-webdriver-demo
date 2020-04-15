@@ -1,4 +1,4 @@
-package solid.testdesignpattern.pageobjectpattern;
+package solid.testdesignpattern.singletonpattern;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

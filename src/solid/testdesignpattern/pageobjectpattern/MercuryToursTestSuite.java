@@ -22,25 +22,18 @@ import testframework.mercurytours.pages.MercuryToursPageRepository;
 
 public class MercuryToursTestSuite {
 
-	public WebDriver driver;
+	private WebDriver driver;
+	private Driver manageDriver = new Driver();
 	
 	MercuryToursPageRepository mercuryToursPage;
 
-	@Parameters({ "MercuryToursURL" })
+	@Parameters({ "MercuryToursURL", "Browser" })
 	@BeforeClass
-	public void setup(String Url) {
+	public void setup(String Url, String browser) throws Exception {
 		
-		final String InitDriver = "webdriver.chrome.driver";
-		//final String startDriver = "lib" + File.separator + "chromedriver";
-		final String startDriver = "C:\\" + "chromedriver_win32.exe";
+		driver = manageDriver.initDriver(browser);
 
-		System.setProperty(InitDriver, startDriver);
-
-		driver = new ChromeDriver();
-		
 		driver.get(Url);
-
-		Assert.assertEquals(driver.getCurrentUrl(), Url);
 
 		System.out.println("Mercury Tours Before Test");
 	}
@@ -67,5 +60,6 @@ public class MercuryToursTestSuite {
 	public void runLoginTest() {
 		LoginPage loginPage = new LoginPage(this.driver);
 		loginPage.loginToMercuryTours();
+		
 	}
 }

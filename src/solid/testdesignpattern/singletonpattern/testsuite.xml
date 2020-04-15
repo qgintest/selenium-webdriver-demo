@@ -4,17 +4,13 @@
 
 	<parameter name="MercuryToursURL" value="http://newtours.demoaut.com/" />
 	<parameter name="Browser" value="Chrome" />
-
-	<test name="Test Set">
+	
+	<test name="Test Design Patterns">
 	
 		<classes>
-			<class
-				name="testframework.mercurytours.testsuiteone.MercuryToursTestSuite" />
-
-			<class
-				name="testframework.mercurytours.testsuite2.MercuryToursTestSuite2" />
+ 			<class
+				name="solid.testdesignpattern.singletonpattern.MercuryToursTestSuite" />
 		</classes>
 	</test>
-	
 
 </suite>
