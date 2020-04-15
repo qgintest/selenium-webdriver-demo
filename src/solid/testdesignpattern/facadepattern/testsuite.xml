@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sample Test Suite">
+
+	<parameter name="MercuryToursURL" value="http://newtours.demoaut.com/" />
+	<parameter name="Browser" value="Chrome" />
+	
+	<test name="Test Design Patterns">
+	
+		<classes>
+ 			<class
+				name="solid.testdesignpattern.facadepattern.MercuryToursTestSuite" />
+		</classes>
+	</test>
+
+</suite>
