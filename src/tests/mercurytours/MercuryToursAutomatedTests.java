@@ -59,6 +59,8 @@ public class MercuryToursAutomatedTests extends Utility {
         fromAirlines.add("Blue Skies Airlines");
         fromAirlines.add("Unified Airlines");
         
+        
+        
       
         for(int i = 0; i <= 2; i++) {
         	bookFlights(fromPorts.get(i), fromAirlines.get(i));
